@@ -64,6 +64,7 @@ def hygiene=(points)
    self.happiness=(@happiness + 2)
    self.hygiene=(@hygiene - 3) 
     "♪ another one bites the dust ♫"
+    "♪ another one bites the dust ♫"
 
   def call_friend(friend)
     self.happiness=(@happiness + 3)
