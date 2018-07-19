@@ -63,7 +63,7 @@ def hygiene=(points)
   def work_out
    self.happiness=(@happiness + 2)
    self.hygiene=(@hygiene - 3) 
-   "♪ Rub-a-dub just relaxing in the tub ♫"
+    "♪ another one bites the dust ♫"
 
   def call_friend(friend)
     happiness=(3)
