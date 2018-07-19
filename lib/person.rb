@@ -56,7 +56,7 @@ def hygiene=(points)
   end
 
   def take_bath
-    self.hygiene= (4
+    self.hygiene= (self.hygiene + 4)
     "♪ Rub-a-dub just relaxing in the tub ♫"
   end
 
@@ -66,8 +66,8 @@ def hygiene=(points)
     "♪ another one bites the dust ♫"
 
   def call_friend(friend)
-    happiness=(3)
-    friend.happiness=(3)
+    self.happiness=(@happiness + 3)
+    friend.happiness=(friend.happiness + 3)
     "Hi #{friend.name}! It's #{self.name}. How are you?"
   end
  end
@@ -75,12 +75,12 @@ def hygiene=(points)
 
    def start_conversation(person, topic)
     if topic == "politics"
-      person.happiness=(-1)
-      happiness=(-1)
+      person.happiness=( person.happiness - 2)
+      self.happiness=(@happiness + -2)
       "blah blah partisan blah lobbyist"
     elsif topic == "weather"
-      person.happiness=(1)
-      happiness=(1)
+      person.happiness=(person.happiness + 1)
+      self.happiness=(@happiness + 1)
       "blah blah sun blah rain"
     else
       "blah blah blah blah blah"
