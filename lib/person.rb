@@ -51,18 +51,18 @@ def hygiene=(points)
   end
 
   def get_paid(salary)
-    self.accounts += salary
+    self.bank_account += salary
     "all about the benjamins"
   end
 
   def take_bath
-    self.hygine=(4)
+    self.hygine += 4
     "♪ Rub-a-dub just relaxing in the tub ♫"
   end
 
   def work_out
-   happiness=(2)
-   hygine=(-3)
+   self.happiness += 2
+   self.hygine += -3
    "♪ Rub-a-dub just relaxing in the tub ♫"
 
   def call_friend(friend)
