@@ -24,10 +24,10 @@ class Person
   end
   
 def hygiene=(points)
-    @hygiene =  points
-    if @hygiene > 10
+    point_value =  points
+    if point_value > 10
       @hygiene = 10
-    elsif @hygiene < 0
+    elsif point_value < 0
       @hygiene = 0
     else
       @hygiene = point_value
@@ -35,7 +35,7 @@ def hygiene=(points)
   end
 
   def clean?
-    if @clean > 7
+    if @hygiene > 7
       true
     else
       false
@@ -56,7 +56,7 @@ def hygiene=(points)
   end
 
   def take_bath
-    self.hygine += 4
+    @hygine += 4
     "♪ Rub-a-dub just relaxing in the tub ♫"
   end
 
