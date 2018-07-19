@@ -13,7 +13,7 @@ class Person
   #happiness will take in an added point and return the propper value
   
   def happiness=(points)
-    point_value = @happiness + points
+    point_value =  points
     if point_value > 10
       @happiness = 10
     elsif point_value < 0 
@@ -24,7 +24,7 @@ class Person
   end
   
 def hygiene=(points)
-    @hygiene = @hygiene + points
+    @hygiene =  points
     if @hygiene > 10
       @hygiene = 10
     elsif @hygiene < 0
@@ -35,7 +35,7 @@ def hygiene=(points)
   end
 
   def clean?
-    if self.hygine > 7
+    if @clean > 7
       true
     else
       false
@@ -43,7 +43,7 @@ def hygiene=(points)
   end
 
   def happy?
-    if self.happiness > 7
+    if @happiness > 7
       true
     else
       false
